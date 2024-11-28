@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
 from werkzeug.exceptions import BadRequest, NotFound
-from uuid import uuid4
 from datetime import datetime
-import json
-from datetime import datetime, date, time
+from uuid import uuid4
 
 from models import Receipt, Item
 from points_calculator import calculate_points
+
 
 app = Flask(__name__)
 
