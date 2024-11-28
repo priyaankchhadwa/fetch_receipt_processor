@@ -73,4 +73,4 @@ def get_receipt_points(receipt_id):
     return jsonify({"points": points})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
